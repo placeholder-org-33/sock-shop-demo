@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: shipping
+  description: Shipping service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/shipping
+    backstage.io/kubernetes-id: shipping
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  providesApis:
+    - shipping-api

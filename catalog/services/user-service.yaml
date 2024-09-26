@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: user
+  description: User service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/user
+    backstage.io/kubernetes-id: user
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  providesApis:
+    - user-api
+  dependsOn:
+    - resource:user-db

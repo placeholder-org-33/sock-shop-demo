@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payment
+  description: Payment service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/payment
+    backstage.io/kubernetes-id: payment
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  providesApis:
+    - payment-api

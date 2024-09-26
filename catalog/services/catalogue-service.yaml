@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: catalogue
+  description: Catalogue service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/catalogue
+    backstage.io/kubernetes-id: catalogue
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  providesApis:
+    - catalogue-api
+  dependsOn:
+    - resource:catalogue-db

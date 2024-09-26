@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: queue-master
+  description: Queue Master service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/queue-master
+    backstage.io/kubernetes-id: queue-master
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop

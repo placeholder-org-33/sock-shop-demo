@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: orders
+  description: Orders service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/orders
+    backstage.io/kubernetes-id: orders
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  providesApis:
+    - orders-api
+  dependsOn:
+    - resource:orders-db

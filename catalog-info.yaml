@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: sock-shop
+  description: Microservices demo application
+spec:
+  owner: backend-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: sock-shop-components
+  description: Sock Shop components
+spec:
+  targets:
+    - ./catalog/services/*.yaml
+    - ./catalog/resources/*.yaml
+    - ./catalog/apis/*.yaml

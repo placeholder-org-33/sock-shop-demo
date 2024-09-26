@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cart
+  description: Cart service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/carts
+    backstage.io/kubernetes-id: carts
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  providesApis:
+    - cart-api
+  dependsOn:
+    - resource:cart-db

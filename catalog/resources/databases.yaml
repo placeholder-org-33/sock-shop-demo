@@ -1,0 +1,42 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: user-db
+  description: Database for User service (Intel only, ppc64le supported in power overlay)
+spec:
+  type: database
+  owner: backend-team
+  system: sock-shop
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: catalogue-db
+  description: Database for Catalogue service (Intel only, ppc64le supported in power overlay)
+spec:
+  type: database
+  owner: backend-team
+  system: sock-shop
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cart-db
+  description: Database for Cart service
+spec:
+  type: database
+  owner: backend-team
+  system: sock-shop
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: orders-db
+  description: Database for Orders service
+spec:
+  type: database
+  owner: backend-team
+  system: sock-shop

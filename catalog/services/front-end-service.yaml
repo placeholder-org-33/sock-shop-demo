@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: front-end
+  description: Front-end service for Sock Shop
+  annotations:
+    github.com/project-slug: microservices-demo/front-end
+    backstage.io/kubernetes-id: front-end
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  system: sock-shop
+  consumesApis:
+    - orders-api
+    - catalogue-api
+    - cart-api
+    - user-api
