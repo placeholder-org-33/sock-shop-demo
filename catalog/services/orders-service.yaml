@@ -13,5 +13,10 @@ spec:
   system: sock-shop
   providesApis:
     - orders-api
+  consumesApis:
+    - user-api
+    - payment-api
+    - shipping-api
+    - cart-api
   dependsOn:
     - resource:orders-db
