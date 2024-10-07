@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: microservices-demo/payment
     backstage.io/kubernetes-id: payment
+    backstage.io/kubernetes-namespace: sock-shop
+    backstage.io/kubernetes-label-selector: "name=payment"
 spec:
   type: service
   lifecycle: production

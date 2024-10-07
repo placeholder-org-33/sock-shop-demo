@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: microservices-demo/user
     backstage.io/kubernetes-id: user
+    backstage.io/kubernetes-namespace: sock-shop
+    backstage.io/kubernetes-label-selector: "name=user"
 spec:
   type: service
   lifecycle: production
@@ -15,3 +17,4 @@ spec:
     - user-api
   dependsOn:
     - resource:user-db
+

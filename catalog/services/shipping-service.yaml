@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: microservices-demo/shipping
     backstage.io/kubernetes-id: shipping
+    backstage.io/kubernetes-namespace: sock-shop
+    backstage.io/kubernetes-label-selector: "name=shipping"
 spec:
   type: service
   lifecycle: production
@@ -13,3 +15,4 @@ spec:
   system: sock-shop
   providesApis:
     - shipping-api
+

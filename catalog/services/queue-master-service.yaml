@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: microservices-demo/queue-master
     backstage.io/kubernetes-id: queue-master
+    backstage.io/kubernetes-namespace: sock-shop
+    backstage.io/kubernetes-label-selector: "name=queue-master"
 spec:
   type: service
   lifecycle: production

@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: microservices-demo/orders
     backstage.io/kubernetes-id: orders
+    backstage.io/kubernetes-namespace: sock-shop
+    backstage.io/kubernetes-label-selector: "name=orders"
 spec:
   type: service
   lifecycle: production

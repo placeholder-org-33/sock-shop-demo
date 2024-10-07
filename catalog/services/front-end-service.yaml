@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: microservices-demo/front-end
     backstage.io/kubernetes-id: front-end
+    backstage.io/kubernetes-namespace: sock-shop
+    backstage.io/kubernetes-label-selector: "name=front-end"
 spec:
   type: service
   lifecycle: production
@@ -16,3 +18,4 @@ spec:
     - catalogue-api
     - cart-api
     - user-api
+
